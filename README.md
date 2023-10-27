@@ -18,7 +18,7 @@
   - [Acknowledgments](#acknowledgments)
   - [📝 License](#-license)
 
-# TDD
+# Blog App
 
 **Blog App** is a classic example of a blog website. It is a fully functional website that shows the list of posts and empowers readers to interact with them by adding comments and liking posts.
 

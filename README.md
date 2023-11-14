@@ -99,18 +99,7 @@ In order to run this project you need: Ruby installed on your pc
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Abdulai Samuel Moiwa**
-
-- GitHub: [@githubhandle](https://github.com/samuelmoiwa)
-- Twitter: [@twitterhandle](https://twitter.com/samuelmoiwa)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ing-abdulai-samuel-moiwa-726340142/)
-
-👤 **Kareem Magdy Wilson**
-
-- GitHub: [@KareemWilson](https://github.com/KareemWilson)
-- Instagram: [@code.afternoon](https://www.instagram.com/code.afternoon/)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/kareem-wilson/)
-
+👤 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>

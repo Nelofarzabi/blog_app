@@ -6,14 +6,14 @@ Rails.application.routes.draw do
   # get 'users/:id/posts', to: 'posts#index'
   # get 'users/:id/posts/:post_id', to: 'posts#show'
 
-  resources :users, only: [:index, :show] do
-    resources :posts, only: [:new, :create, :index, :show, ] do
-      resources :comments, only: [:new, :create]
+  resources :users, only: %i[index show] do
+    resources :posts, only: %i[new create index show] do
+      resources :comments, only: %i[new create]
       resources :likes, only: [:create]
     end
   end
 
   # Defines the root path route ("/")
   # root "articles#index"
-  root "users#index"
+  root 'users#index'
 end

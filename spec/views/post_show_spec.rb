@@ -1,4 +1,5 @@
 require 'rails_helper'
+
 RSpec.describe 'Post show page', type: :system do
   before do
     driven_by(:rack_test)
@@ -20,20 +21,23 @@ RSpec.describe 'Post show page', type: :system do
     end
 
     it 'should display the number of comments' do
-      expect(page).to have_content('Comments:1')
+      expect(page).to have_content('Comments: 1')
     end
+
     it 'should display the number of likes' do
       expect(page).to have_content('Likes: 0')
     end
+
     it "should display the post's body" do
       expect(page).to have_content(@post.text)
     end
 
-    it 'should display the comments pusblished' do
+    it 'should display the comments published' do
       expect(page).to have_content('Hello')
       expect(page).to have_content('John')
     end
-    it 'Should show  the username of each commentor.' do
+
+    it 'should show the username of each commenter' do
       expect(page).to have_content('John: Hello')
     end
   end

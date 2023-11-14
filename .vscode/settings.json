@@ -1,8 +1,0 @@
-{
-  "editor.wordWrap": "on",
-  "editor.formatOnType": true,
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnPaste": true,
-  "editor.formatOnSaveMode": "modifications"
-}

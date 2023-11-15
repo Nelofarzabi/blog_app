@@ -1,12 +1,14 @@
 class LikesController < ApplicationController
   def create
-    @like = Like.new(post_id: params[:post_id], user_id: params[:user_id])
-    @like.user = current_user
-    if @like.save
-      flash[:success] = 'Liked !'
-      redirect_to user_post_path(id: @like.post_id, user_id: @like.user_id)
+    @user = current_user
+    @post = Post.find(params[:post_id])
+    @likes = Like.new(author_id: @user.id, post_id: params[:post_id])
+    if @likes.save
+      @post.update(likes_counter: @post.likes.count)
+      redirect_to user_posts_path(@user, @post)
     else
-      flash.now[:error] = 'Something went wrong!'
+      flash.now[:error] = 'comment not added'
+      @likes.errors.full_messages.join(', ')
     end
   end
 end
